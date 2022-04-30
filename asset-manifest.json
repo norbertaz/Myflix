@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/Myflix/static/js/main.b2f6c993.js",
+    "index.html": "/Myflix/index.html",
+    "main.b2f6c993.js.map": "/Myflix/static/js/main.b2f6c993.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.b2f6c993.js"
+  ]
+}
