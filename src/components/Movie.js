@@ -12,7 +12,7 @@ const setAverageColor = (vote) => {
 const Movie = ({title, poster_path, overview, vote_average}) => (
     <div className="movie w-72 m-4 rounded-sm shadow-lg shadow-black/40 overflow-hidden relative group">
         <div className="movie-header text-white ">
-            <img className="max-w-full h-[432px]" src={IMAGE_API + poster_path} alt={title} />
+            <img className="max-w-full h-[432px]" src={poster_path ? IMAGE_API + poster_path : 'https://cdn.pixabay.com/photo/2015/01/11/09/19/film-596009_960_720.jpg'} alt={title} />
             <div className="movie-info h-24 flex items-center justify-between p-6 bg-indigo-600 ">
                 <h3 className="m-0 font-semibold">{title}</h3>
                 <span className={`text-center p-1 font-bold w-8 rounded ${setAverageColor(vote_average)}`}>{vote_average}</span>
